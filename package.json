@@ -2,7 +2,7 @@
   "name": "doz-metatag",
   "version": "1.0.0",
   "description": "Inject metatag inside Doz app",
-  "main": "index.js",
+  "main": "dits/index.js",
   "dependencies": {
     "doz": "^1.6.1",
     "metaset": "^1.0.1",
