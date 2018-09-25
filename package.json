@@ -1,0 +1,41 @@
+{
+  "name": "doz-metatag",
+  "version": "1.0.0",
+  "description": "Inject metatag inside Doz app",
+  "main": "index.js",
+  "dependencies": {
+    "doz": "^1.6.1",
+    "metaset": "^1.0.1",
+    "parcel-bundler": "^1.10.0"
+  },
+  "devDependencies": {
+    "jsdom": "^12.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "preversion": "npm run-script test && npm run-script build && echo git commit -a -m BUILD",
+    "postversion": "npm publish && git push --follow-tags",
+    "release:major": "npm version major",
+    "release:minor": "npm version minor",
+    "release:patch": "npm version patch",
+    "build": "parcel build index.js --no-cache --no-source-maps --global dozmetatag",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dozjs/doz-metatag.git"
+  },
+  "keywords": [
+    "metatag",
+    "doz",
+    "inject",
+    "prenrender"
+  ],
+  "author": "Fabio Ricali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dozjs/doz-metatag/issues"
+  },
+  "homepage": "https://github.com/dozjs/doz-metatag#readme"
+}
