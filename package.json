@@ -1,17 +1,17 @@
 {
   "name": "doz-metatag",
-  "version": "1.0.0",
-  "description": "Inject metatag inside Doz app",
+  "version": "0.0.0",
+  "description": "Inject meta tag in document from Doz app",
   "main": "dits/index.js",
   "dependencies": {
-    "doz": "^1.6.1",
-    "metaset": "^1.0.1",
-    "parcel-bundler": "^1.10.0"
+    "metaset": "^1.0.1"
   },
   "devDependencies": {
+    "doz": "^1.6.1",
     "jsdom": "^12.0.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "parcel-bundler": "^1.10.0"
   },
   "scripts": {
     "preversion": "npm run-script test && npm run-script build && echo git commit -a -m BUILD",
@@ -19,7 +19,7 @@
     "release:major": "npm version major",
     "release:minor": "npm version minor",
     "release:patch": "npm version patch",
-    "build": "parcel build index.js --no-cache --no-source-maps --global dozmetatag",
+    "build": "parcel build index.js --no-cache --no-source-maps --global dozMetaTag",
     "test": "mocha test"
   },
   "repository": {
@@ -27,6 +27,8 @@
     "url": "git+https://github.com/dozjs/doz-metatag.git"
   },
   "keywords": [
+    "meta",
+    "tag",
     "metatag",
     "doz",
     "inject",

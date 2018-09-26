@@ -11,7 +11,7 @@ module.exports = function (Doz, app, options) {
         image: ''
     }, options);
 
-    function metatag(opts) {
+    function metaTag(opts) {
         opts = Object.assign(defaultOpts, opts);
 
         // Title
@@ -49,11 +49,11 @@ module.exports = function (Doz, app, options) {
     }
 
     // Apply to loading
-    metatag();
+    metaTag();
 
     // Add to global component
     Doz.mixin({
-        metatag
+        metaTag: metaTag
     });
 };
 

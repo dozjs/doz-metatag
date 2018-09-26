@@ -52,7 +52,7 @@ describe('metaTag', function () {
                 `
             },
             onCreate() {
-                this.metatag({
+                this.metaTag({
                     title: 'New title'
                 });
             }
