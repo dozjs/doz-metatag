@@ -53,7 +53,7 @@ module.exports = function (Doz, app, options) {
 
     // Add to global component
     Doz.mixin({
-        metaTag: metaTag
+        metaTag
     });
 };
 
