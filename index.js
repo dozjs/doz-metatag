@@ -1,4 +1,4 @@
-const metaset = require('metaset');
+const Metaset = require('metaset');
 module.exports = function (Doz, app, options) {
 
     const defaultOpts = Object.assign({
@@ -8,11 +8,14 @@ module.exports = function (Doz, app, options) {
         url: '',
         siteName: '',
         locale: '',
-        image: ''
+        image: '',
+        selfWindow: window
     }, options);
 
     function metaTag(opts) {
         opts = Object.assign(defaultOpts, opts);
+
+        const metaset = new Metaset(opts.selfWindow);
 
         // Title
         if (opts.title) {
@@ -57,4 +60,4 @@ module.exports = function (Doz, app, options) {
     });
 };
 
-module.exports.metaset = metaset;
+module.exports.metaset = new Metaset();

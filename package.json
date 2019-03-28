@@ -4,7 +4,7 @@
   "description": "Inject meta tag in document from Doz app",
   "main": "dits/index.js",
   "dependencies": {
-    "metaset": "^1.0.1"
+    "metaset": "^2.0.0"
   },
   "devDependencies": {
     "doz": "^1.6.1",

@@ -23,7 +23,8 @@ Doz.use(metaTag, {
     url: 'http://lorem.com',
     siteName: 'Lorem.com',
     locale: 'en_US',
-    image: 'an-image.jpg'
+    image: 'an-image.jpg',
+    selfWindow: window
 })
 
 new Doz({
